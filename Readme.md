@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Александр Суходолов](https://up.htmlacademy.ru/htmlcss/27/user/1173469).
-* Наставник: `Без наставника`.
+* Студент: [Александр Суходолов](https://up.htmlacademy.ru/htmlcss/26/user/1173469).
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/id241239).
 
 ---
 
@@ -18,7 +18,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/1173469-device-27) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/1173469-device-26) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
 
 <img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29038004-a420d688-7bae-11e7-9a40-8f72e1f3cac4.jpg">
 
