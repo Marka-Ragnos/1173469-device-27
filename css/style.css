@@ -93,7 +93,7 @@ a {
 .search-form {
 	width: 441px;
 	margin-right: auto;
-	position: relative;
+  position: relative;
 }
 .main-header-search {
 	width: 100%;
@@ -110,8 +110,31 @@ a {
   	line-height: 2;
   	letter-spacing: 0.15px;
   	text-align: left;
-  	color: rgba(0, 0, 0, 0.3);
 }
+.main-header-search:focus {
+  border-bottom: 2px solid #000;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.main-header-search::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.main-header-search::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.main-header-search:hover::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-header-search:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-header-search:focus::-moz-placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+.main-header-search:focus::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
 .button-search-button {
 	height: 20px;
 	width: 20px;
@@ -490,7 +513,7 @@ a {
 	text-transform: uppercase;
 }
 .page-footer-services a:hover {
-	color: rgba(255, 255, 255, 0.6);	
+	color: rgba(255, 255, 255, 0.6);
 }
 .page-footer-services a:active {
 	color: rgba(255, 255, 255, 0.3);
@@ -506,7 +529,7 @@ a {
 	opacity: 0.3;
 }
 .page-footer-phone a {
-	color: #ffffff;	
+	color: #ffffff;
 }
 .page-footer-links-wrap {
 	margin-top: 60px;
@@ -583,13 +606,13 @@ a {
 	line-height: 1.71;
 	letter-spacing: 0.14px;
 	color: rgba(0, 0, 0, 0.3);
-	position: relative;	
+	position: relative;
 }
 .crumbs-list a:hover {
-	color: rgba(0, 0, 0, 0.6);	
+	color: rgba(0, 0, 0, 0.6);
 }
 .crumbs-list a:active {
-	color: rgba(0, 0, 0, 0.1);	
+	color: rgba(0, 0, 0, 0.1);
 }
 .crumbs-item:not(:last-child) a::after {
 	content: "";
@@ -1447,7 +1470,7 @@ a {
 	align-items: center;
 	height: 553px;
 	top: 10vw;
-	left: 50vw;	
+	left: 50vw;
 }
 .modal-login .btn {
 	position: absolute;
@@ -1477,7 +1500,7 @@ a {
 	width: 55px;
 	height: 55px;
 	background-image: url(../img/modal-close.svg);
-	border: 0; 
+	border: 0;
 	cursor: pointer;
 	opacity: 0.5;
 	border-radius: 50%;
