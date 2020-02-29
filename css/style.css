@@ -135,11 +135,11 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 .loupe {
-  height: 20px;
-	width: 20px;
+  height: 16px;
+	width: 16px;
 	position: absolute;
 	top: 8px;
-	right: 415px;
+	right: 419px;
 	cursor: pointer;
 }
 .button-search-button {
@@ -395,7 +395,10 @@ a {
 }
 .main-info-delivery-list {
 	list-style: circle;
-	margin: -3px;
+  margin-left: -20px;
+}
+.main-info-delivery-list li {
+  padding-left: 16px;
 }
 .main-info a, .main-contacts .main-contacts-btn, .catalog-content-filter .btn, .services-slider-wrap .btn {
 	position: relative;
@@ -407,9 +410,8 @@ a {
 }
 .main-info .btn {
 	display: inline-block;
-	margin-top: 66px;
-	margin-left: 23px;
-	padding: 5px 13px;
+	margin-top: 42px;
+	padding: 5px 22px;
 }
 .main-info p:nth-child(2) {
 	margin-bottom: 67px;
@@ -424,9 +426,8 @@ a {
 }
 .main-contacts .main-contacts-btn {
 	display: inline-block;
-	margin-top: 68px;
-	margin-left: 41px;
-	padding: 5px 13px;
+	margin-top: 66px;
+	padding: 5px 40px;
 }
 .page-footer-logo:hover {
 	opacity: 0.6;
@@ -845,7 +846,7 @@ a {
 }
 .promo-slider__descr-wrap .btn {
 	position: relative;
-	padding: 5px 13px;
+	padding: 5px 44px;
 }
 .promo-slider__advantages-col {
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -859,7 +860,8 @@ a {
 	font-size: 13px;
 	line-height: 1.54;
 	letter-spacing: 0.13px;
-	color: #464646;
+  color: #464646;
+  padding-top: 10px;
 }
 .promo-slider__descr-wrap--1::before {
 	content: "01";
@@ -1308,6 +1310,7 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 .services-slider-wrap li .btn {
+  width: 160px;
 	background: transparent;
 	position: relative;
 	z-index: 1;
