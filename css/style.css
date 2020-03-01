@@ -1300,7 +1300,7 @@ a {
 	color: #f7e296;
 }
 .services-slider-wrap li .btn:active.btn:active::before {
-	width: 267px;
+	width: 278px;
 }
 * button:active {
 	color: #f7e296;
@@ -1580,6 +1580,11 @@ a {
 	letter-spacing: normal;
 	text-align: left;
 	color: rgba(70, 70, 70, 0.8);
+}
+.modal-window input[type="text"]:hover,
+.modal-window input[type="email"]:hover,
+.modal-window textarea:hover {
+  background-color: #eaeaeaad;
 }
 .modal-window .textarea,
 .modal-window textarea {
