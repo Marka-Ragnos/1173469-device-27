@@ -1166,7 +1166,7 @@ a {
 	height: 319px;
 	background: black;
 	left: 278px;
-	top: -101px;
+	top: -99px;
 }
 .services-slider__item  {
 	width: 426px;
@@ -1227,7 +1227,7 @@ a {
 .services-slider__item--delivery {
 	position: relative;
 	margin: 0;
-	margin-left: 110px;
+	margin-left: 125px;
 	margin-top: -28px;
 	padding: 0;
 }
@@ -1251,7 +1251,7 @@ a {
 	width: 278px;
 	margin: 0;
 	padding: 0;
-	margin-left: 14px;
+	margin-left: 0px;
 	margin-top: -14px;
 }
 .services-slider-wrap li {
@@ -1276,7 +1276,7 @@ a {
 	height: 8px;
 	background: #f0c52e;
 	z-index: -1;
-	top: calc((100% - 8px) / 2);
+	top: calc((100% - 10px) / 2);
 	left: 0;
 }
 .btn:hover::before {
@@ -1292,9 +1292,9 @@ a {
 	content: "";
 	position: absolute;
 	height: 100%;
-    background: #000000;
+  background: #000000;
 	top: 0;
-	width: 267px;
+	width: 278px;
 }
 .services-slider__control-active {
 	color: #f7e296;
@@ -1318,10 +1318,10 @@ a {
 	padding: 5px 13px;
 }
 .services-slider-wrap li:nth-child(1) {
-	margin-bottom: 33px;
+	margin-bottom: 30px;
 }
 .services-slider-wrap li:nth-child(2) {
-	margin-bottom: 36px;
+	margin-bottom: 32px;
 }
 .main-brands__list {
 	margin: 0;
@@ -1507,13 +1507,11 @@ a {
 	left: 50vw;
 }
 .modal-login .btn {
-	position: absolute;
-	bottom: 92px;
-	left: 100px;
-	outline: none;
-}
-.modal-login .btn::before {
-	z-index: 2;
+	position: relative;
+  outline: none;
+  z-index: 1;
+  padding: 5px 22px;
+  background-color: #ffffff;
 }
 .modal-login-show {
 	display: flex;
@@ -1533,7 +1531,7 @@ a {
 	right: 22px;
 	width: 55px;
 	height: 55px;
-	background-image: url(../img/modal-close.svg);
+	background-image: url("../img/modal-close.svg");
 	border: 0;
 	cursor: pointer;
 	opacity: 0.5;
@@ -1543,11 +1541,11 @@ a {
 	margin: 0;
 }
 .user-information {
-	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	width: 760px;
-	height: 286px;
+  height: 286px;
+  margin-top: -45px;
 }
 .modal-window {
 	display: flex;
@@ -1565,7 +1563,7 @@ a {
 	padding: 0;
 }
 .modal-window input[type="text"],
-.modal-window input[type="password"],
+.modal-window input[type="email"],
 .modal-window textarea {
 	background-color: #e5e5e5;
 	box-sizing: border-box;
@@ -1581,11 +1579,12 @@ a {
 	line-height: 1.29;
 	letter-spacing: normal;
 	text-align: left;
-	color: rgba(70, 70, 70, 0.4);
+	color: rgba(70, 70, 70, 0.8);
 }
 .modal-window .textarea,
 .modal-window textarea {
-	width: 100%;
+  width: 100%;
+  min-height: 156px;
 }
 .modal-window .textarea {
 	margin-top: 35px;
