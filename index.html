@@ -249,7 +249,7 @@
                   <input type="email" name="useremail" id="useremail" required placeholder="email@example.com">
                 </label>
                 <label class="textarea">Текст письма<br>
-                  <textarea name="letter" id="letter">В свободной форме</textarea>
+                  <textarea name="letter" id="letter" required placeholder="В свободной форме"></textarea>
                 </label>
               </p>
               <button class="btn" type="submit">отправить</button>
@@ -338,13 +338,16 @@
   var login = popup.querySelector("[name=username]");
   var form = popup.querySelector("form");
   var password = popup.querySelector("[name=useremail]");
-
+  var storage = localStorage.getItem("login");
 
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-login-show");
     login.focus();
+    if (storage) {
+      login.value = storage;
+    }
   });
   close.addEventListener("click", function (evt) {
     evt.preventDefault();

@@ -2,19 +2,19 @@
 	font-family: "Gilroy";
 	font-style: normal;
 	font-weight: 800;
-	src: url(../fonts/gilroyextrabold.woff2) format("woff2"), url(../fonts/gilroyextrabold.woff) format("woff");
+	src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
 }
 @font-face {
 	font-family: "Gilroy";
 	font-style: normal;
 	font-weight: 300;
-	src: url(../fonts/gilroylight.woff2) format("woff2"), url(../fonts/gilroylight.woff) format("woff");
+	src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
 }
 @font-face {
 	font-family: "OpenSans";
 	font-style: normal;
 	font-weight: 300;
-	src: url(../fonts/opensanslight.woff2) format("woff2"), url(../fonts/opensanslight.woff) format("woff");
+	src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -101,8 +101,8 @@ a {
   	padding-left: 40px;
   	border: none;
   	outline: none;
-	background: transparent;
-	font-family: "OpenSans", "Arial", sans-serif;
+	  background: transparent;
+	  font-family: "OpenSans", "Arial", sans-serif;
   	font-size: 15px;
   	font-weight: 300;
   	font-stretch: normal;
@@ -344,7 +344,7 @@ a {
 .main-info-section {
 	position: relative;
 	margin-top: 151px;
-	margin-bottom: 85px;
+	margin-bottom: 82px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -1495,7 +1495,6 @@ a {
 	margin-left: -480px;
 	width: 960px;
 
-
 }
 .modal-login {
 	display: none;
@@ -1537,6 +1536,12 @@ a {
 	opacity: 0.5;
 	border-radius: 50%;
 }
+.modal-close:hover {
+  opacity: 1;
+}
+.modal-close:focus {
+  opacity: 0.3;
+}
 .modal-map p {
 	margin: 0;
 }
@@ -1565,13 +1570,13 @@ a {
 .modal-window input[type="text"],
 .modal-window input[type="email"],
 .modal-window textarea {
-	background-color: #e5e5e5;
+  background-color: #eaeaeaad;
 	box-sizing: border-box;
 	padding: 20px;
 	margin-top: 13px;
 	opacity: 0.5;
 	border: 0;
-	font-family: OpenSans;
+  font-family: "OpenSans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	font-stretch: normal;
@@ -1579,12 +1584,20 @@ a {
 	line-height: 1.29;
 	letter-spacing: normal;
 	text-align: left;
-	color: rgba(70, 70, 70, 0.8);
+  color: rgba(70, 70, 70, 0.8);
+  outline: none;
 }
 .modal-window input[type="text"]:hover,
 .modal-window input[type="email"]:hover,
 .modal-window textarea:hover {
-  background-color: #eaeaeaad;
+  background-color: #e5e5e5;
+}
+.modal-window input[type="text"]:focus,
+.modal-window input[type="email"]:focus,
+.modal-window textarea:focus {
+  outline: 3px solid #f7e296;
+  background-color: #ffffff;
+  color: #464646;
 }
 .modal-window .textarea,
 .modal-window textarea {
