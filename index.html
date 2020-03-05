@@ -243,13 +243,13 @@
             <form class="user-information" action="https://echo.htmlacademy.ru" method="POST">
               <p class="modal-window">
                 <label>Ваше имя<br>
-                  <input type="text" name="username" id="username" required placeholder="Имя Фамилия">
+                  <input type="text" name="username" id="username" placeholder="Имя Фамилия">
                 </label>
                 <label>Ваш e-mail<br>
-                  <input type="email" name="useremail" id="useremail" required placeholder="email@example.com">
+                  <input type="email" name="useremail" id="useremail" placeholder="email@example.com">
                 </label>
                 <label class="textarea">Текст письма<br>
-                  <textarea name="letter" id="letter" required placeholder="В свободной форме"></textarea>
+                  <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
                 </label>
               </p>
               <button class="btn" type="submit">отправить</button>
@@ -261,6 +261,7 @@
 
           <section class="modal modal-map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4498.099688004451!2d37.52605145701816!3d55.688121173445104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1583388145316!5m2!1sru!2sru" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             <p><img src="img/map-big.jpg.png" width="960" height="559"
                 alt="Офис компании по адресу: г. Москва, ул. Строителей, 15"></p>
             <button class="modal-close" type="button">
@@ -331,38 +332,8 @@
     </div>
   </footer>
 
-<script>
-  var link = document.querySelector(".main-contacts-btn");
-  var popup = document.querySelector(".modal-login");
-  var close = popup.querySelector(".modal-close");
-  var login = popup.querySelector("[name=username]");
-  var form = popup.querySelector("form");
-  var password = popup.querySelector("[name=useremail]");
-  var storage = localStorage.getItem("login");
-
-
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-login-show");
-    login.focus();
-    if (storage) {
-      login.value = storage;
-    }
-  });
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-login-show");
-  });
-  form.addEventListener("submit", function (evt) {
-    if (!login.value || !password.value) {
-      evt.preventDefault();
-      console.log("Нужно ввести Ваше имя и Ваш e-mail");
-    } else {
-      localStorage.setItem("login", login.value);
-    }
-  });
-
-</script>
+<script src="/js/popup.js"></script>
+<script src="/js/map.js"></script>
 </body>
 
 </html>

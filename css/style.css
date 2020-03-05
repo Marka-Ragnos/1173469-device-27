@@ -1358,15 +1358,19 @@ a {
 .catalog-sort {
 	display: flex;
 	height: 71px;
-	align-items: center;
+  align-items: center;
+  flex-grow: 1;
 }
 .catalog-sort h2 {
 	margin: 0;
-	margin-left: 76px;
+	margin-left: 77px;
 }
 .catalog-sort ul {
 	list-style: none;
-	display: flex;
+  display: flex;
+}
+.catalog-sort .arrows {
+  margin-left: auto;
 }
 .catalog-sort-links {
 	margin: 0;
@@ -1392,14 +1396,13 @@ a {
 	color: #000000;
 }
 .catalog-sort-links li:nth-child(1) {
-	margin-left: 53px;
-	margin-right: 29px;
+	margin-left: 52px;
 }
 .catalog-sort-links li:nth-child(2) {
-	margin-right: 32px;
+	margin-left: 30px;
 }
 .catalog-sort-links li:nth-child(3) {
-    padding-right: 218px;
+  margin-left: 33px;
 }
 .catalog-sort-item.current a {
 	color: #000000;
@@ -1486,6 +1489,44 @@ a {
 .pages-list a:active {
 	color: #000000;
 }
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 .modal {
 	position: fixed;
 	background-color: #ffffff;
@@ -1512,18 +1553,45 @@ a {
   padding: 5px 22px;
   background-color: #ffffff;
 }
+
 .modal-login-show {
 	display: flex;
-	z-index: 2;
+  z-index: 2;
+  animation: bounce 0.6s;
+}
+.modal-login-error {
+  animation: shake 0.6s;
+}
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .modal-map {
 	display: none;
-	height: 559px;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+  width: 960px;
+  height: 559px;
 	top: 10vw;
 	left: 50vw;
 }
+.modal-map-show {
+	display: flex;
+  z-index: 2;
+  /* animation: bounce 0.6s; */
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
 .modal-close {
-	position: absolute;
+  position: absolute;
+  z-index: 3;
 	margin: 0;
 	padding: 0;
 	top: 22px;
@@ -1541,6 +1609,7 @@ a {
 }
 .modal-close:focus {
   opacity: 0.3;
+  outline: none;
 }
 .modal-map p {
 	margin: 0;
