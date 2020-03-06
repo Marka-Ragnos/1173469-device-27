@@ -408,6 +408,12 @@ a {
 	background: transparent;
 	z-index: 1;
 }
+.catalog-content-filter {
+  width: 328px;
+}
+.catalog-content-filter .filter-form {
+  margin-left: 57px;
+}
 .main-info .btn {
 	display: inline-block;
 	margin-top: 42px;
@@ -701,14 +707,14 @@ a {
 .filter-form fieldset::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: -13px;
+    left: 2px;
+    width: 76%;
     height: 2px;
     background-color: #000;
 }
 .filter-form .filter-group:nth-child(1) {
-	margin-top: 87px;
+	margin-top: 81px;
 }
 .filter-form .filter-group:nth-child(2) {
 	margin-top: 57px;
@@ -722,8 +728,7 @@ a {
 }
 .price-controls {
     position: relative;
-    margin-top: 17px;
-    margin-bottom: 8px;
+    margin-top: 35px;
 }
 .price-controls .scale {
     height: 2px;
@@ -1728,4 +1733,61 @@ a {
 }
 .main-brands__link--vive:hover img {
 	opacity: 1;
+}
+
+
+.filter-range {
+padding-top: 35px;
+}
+.filter-range__controls {
+position: relative;
+display: flex;
+flex-direction: column;
+padding-bottom: 5px;
+}
+.filter-range__scale {
+  width: 76%;
+height: 2px;
+background-color: #dbdbdb;
+}
+.filter-range__bar {
+width: 60%;
+height: 2px;
+background-color: #91c92f;
+}
+.filter-range__toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px #dadada;
+  cursor: pointer;
+}
+.filter-range__toggle--min {
+  top: -10px;
+  left: -4px;
+}
+.filter-range__toggle--max {
+  top: -10px;
+  left: 109px;
+}
+.filter-range__price {
+  display: flex;
+}
+.filter-range__price {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+.filter-range__price p {
+  margin: 0;
+	font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.2);
 }
