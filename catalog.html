@@ -7,7 +7,7 @@
          content="виртуальная реальность, моноподы для селфи, экшн-камеры, фитнес-браслеты, умные часы, квадрокоптеры">
       <title>HTML Academy: Девайс</title>
       <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/style-min.css">
+      <link rel="stylesheet" href="css/style.css">
    </head>
    <body class="catalog-page">
       <header class="main-header main-header-catalog container">
@@ -114,8 +114,12 @@
                                  <div class="filter-range__toggle  filter-range__toggle--max"></div>
                               </div>
                               <div class="filter-range__price">
-                                 <p>от 0</p>
-                                 <p>до 5000</p>
+                                 <label class="filter-range__label  filter-range__label--min">от
+                                    <input class="filter-range__input" type="text" name="min-price" value="0">
+                                  </label>
+                                  <label class="filter-range__label  filter-range__label--max">до
+                                    <input class="filter-range__input" type="text" name="max-price" value="5000">
+                                  </label>
                               </div>
                            </div>
                         </fieldset>
@@ -172,7 +176,7 @@
                      <div class="products">
                         <ul class="products-list">
                            <li class="product">
-                              <img src="img/item-1-jpg.png" width="360" height="380" alt="Любительская селфи-палка">
+                              <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
                               <span class="product-new">NEW</span>
                               <div class="product-hover">
                                  <a class="btn" href="#">В корзину</a>
@@ -188,7 +192,7 @@
                               </div>
                            </li>
                            <li class="product">
-                              <img src="img/item-2-jpg.png" width="360" height="380" alt="Профессиональная селфи-палка">
+                              <img src="img/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                               <span class="product-new">NEW</span>
                               <div class="product-hover">
                                  <a class="btn" href="#">В корзину</a>
@@ -204,7 +208,7 @@
                               </div>
                            </li>
                            <li class="product">
-                              <img src="img/item-3-jpg.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                              <img src="img/item-3-jpg.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                               <span class="product-new">NEW</span>
                               <div class="product-hover">
                                  <a class="btn" href="#">В корзину</a>
@@ -220,7 +224,7 @@
                               </div>
                            </li>
                            <li class="product">
-                              <img src="img/item-4-jpg.png" width="360" height="380" alt="Селфи-палка Следуй за мной">
+                              <img src="img/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
                               <span class="product-new product-new-active">NEW</span>
                               <div class="product-hover">
                                  <a class="btn" href="#">В корзину</a>

@@ -1903,13 +1903,11 @@
  }
  .filter-range__price {
   display: flex;
- }
- .filter-range__price {
-  display: flex;
   justify-content: space-between;
-  width: 55%;
+  width: 63%;
  }
- .filter-range__price p {
+ .filter-range__label--max,
+ .filter-range__label--min {
   color: rgba(0, 0, 0, 0.2);
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
@@ -1919,3 +1917,27 @@
   letter-spacing: normal;
   margin: 0;
  }
+ .filter-range__input {
+ width: 50px;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Gilroy","Arial",sans-serif;
+    color: rgba(0,0,0,.2);
+    letter-spacing: 0;
+    background: 0 0;
+    border: 0;
+ }
+.filter-range__label--min {
+  flex-grow: 1;
+  margin-right: 18px;
+}
+.filter-range__label--max {
+  flex-grow: 1;
+}
+/* [type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+} */
